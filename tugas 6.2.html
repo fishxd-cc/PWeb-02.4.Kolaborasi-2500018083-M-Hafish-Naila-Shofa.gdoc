@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout 3 Kolom 2 Baris</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .header {
+            background-color: lightblue;
+            padding: 30px;
+            font-size: 30px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 50px;
+            border: 1px solid black;
+        }
+
+        .left {
+            background-color: lightgreen;
+        }
+
+        .middle {
+            background-color: lightyellow;
+        }
+
+        .right {
+            background-color: lightcoral;
+        }
+
+        .footer {
+            background-color: lightgray;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        Header
+    </div>
+
+    <div class="row">
+        <div class="column left">
+            Sidebar Kiri
+        </div>
+
+        <div class="column middle">
+            Content Utama
+        </div>
+
+        <div class="column right">
+            Sidebar Kanan
+        </div>
+    </div>
+
+    <div class="footer">
+        Footer
+    </div>
+
+</body>
+</html>
